@@ -17,15 +17,15 @@ public class Tarea6EDClase {
         }
         if (numProductos != NUM_PRODUCTOS_PARA_DESCUENTO_PORCENTAJE_EXTRA) {
             double descuentoPorcentaje = 0.8;
-            calculoPagoYEnvio(precioProducto, descuentoPorcentaje);
+            calcularPagoYEnviar(precioProducto, descuentoPorcentaje);
         } else {
             double descuentoPorcentaje = 0.95;
-            calculoPagoYEnvio(precioProducto, descuentoPorcentaje);
+            calcularPagoYEnviar(precioProducto, descuentoPorcentaje);
         }
 
     }
 
-    private void calculoPagoYEnvio(double precioProducto, double descuentoPorcentaje) {
+    private void calcularPagoYEnviar(double precioProducto, double descuentoPorcentaje) {
         double totalPagar = precioProducto * descuentoPorcentaje;
         System.out.println("El total a pagar es:" + totalPagar);
         System.out.println("Enviado");
